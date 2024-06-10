@@ -31,11 +31,11 @@ struct OAuth2Client {
     client: BasicClient,
 }
 
-const CLIENT_ID: &str = "882522453771-s8vtldcld9kfm22jo5votsve7sb1recb.apps.googleusercontent.com";
-const CLIENT_SECRET: &str = "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";
+const CLIENT_ID: &str = "YOUR_CLIENT_ID";
+const CLIENT_SECRET: &str = "YOUR_SECTRET_KEY";
 const AUTH_URL: &str = "https://accounts.google.com/o/oauth2/auth";
 const TOKEN_URL: &str = "https://www.googleapis.com/oauth2/v3/token";
-const MONGO_DB_URI: &str = "mongodb+srv://afaqkarim99:Bn4wz2NYMSzQr9Xj@stripe-app.e73tt6s.mongodb.net/";
+const MONGO_DB_URI: &str = "DB_CONNECTION";
 
 #[get("/")]
 fn index() -> &'static str {
