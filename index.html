@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Login Test</title>
+</head>
+<body>
+    <h1>Google Login Test</h1>
+    <form id="loginForm" action="http://localhost:8000/auth/google" method="post" style="display:none;">
+        <input type="hidden" name="action" value="Login with Google">
+    </form>
+    <button id="loginButton">Login with Google</button>
+
+    <script>
+        document.getElementById("loginButton").addEventListener("click", function() {
+            document.getElementById("loginForm").submit();
+        });
+    </script>
+</body>
+</html>
